@@ -1,0 +1,188 @@
+import { useEffect, useRef, useState } from "react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { GooeyNav } from "@/components/react-bits";
+import { Button } from "@/components/ui/button";
+import { useScroll } from "@/contexts/scroll-context";
+import type { Section } from "@/contexts/scroll-context";
+import { useTheme } from "@/providers/theme-provider";
+
+const NAV_SECTIONS: Section[] = [
+  "about",
+  "skills",
+  "experience",
+  "projects",
+  "contact",
+];
+const NAV_LABELS = ["About", "Skills", "Experience", "Projects", "Contact"];
+
+const pill = "bg-card/80 border border-text-secondary/20 backdrop-blur-md";
+
+const Navbar = () => {
+  const { scrollTo, getElement } = useScroll();
+  const { theme, setTheme } = useTheme();
+  const [activeNavIndex, setActiveNavIndex] = useState<number | undefined>(
+    undefined,
+  );
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const isDark =
+    theme === "dark" ||
+    (theme === "system" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+  const toggleTheme = () => setTheme(isDark ? "light" : "dark");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+      debounceRef.current = setTimeout(() => {
+        const mid = window.innerHeight * 0.5;
+        const firstEl = getElement("about");
+
+        if (!firstEl || firstEl.getBoundingClientRect().top > mid) {
+          setActiveNavIndex(undefined);
+          return;
+        }
+
+        let idx = 0;
+        for (let i = 0; i < NAV_SECTIONS.length; i++) {
+          const el = getElement(NAV_SECTIONS[i]);
+          if (!el) continue;
+          if (el.getBoundingClientRect().top <= mid) idx = i;
+        }
+        setActiveNavIndex(idx);
+      }, 60);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
+  }, [getElement]);
+
+  useEffect(() => {
+    const handleOutside = (e: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
+        setMobileOpen(false);
+      }
+    };
+    if (mobileOpen) document.addEventListener("mousedown", handleOutside);
+    return () => document.removeEventListener("mousedown", handleOutside);
+  }, [mobileOpen]);
+
+  const handleNavClick = (section: Section) => {
+    scrollTo(section);
+    setMobileOpen(false);
+  };
+
+  const gooeyItems = NAV_LABELS.map((label, i) => ({
+    label,
+    href: `#${NAV_SECTIONS[i]}`,
+    onClick: () => handleNavClick(NAV_SECTIONS[i]),
+  }));
+
+  return (
+    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2">
+      {/* <Button
+        variant="ghost"
+        onClick={goHome}
+        aria-label="Go to top"
+        className={`hidden md:flex w-14 h-14 cursor-pointer rounded-full p-0 hover:bg-transparent ${pill}`}
+      >
+        <span className="text-sm font-bold bg-gradient-to-r from-accent-primary to-accent-hover bg-clip-text text-transparent">JA</span>
+      </Button> */}
+
+      <div
+        className={`hidden md:block rounded-full px-2 py-1.5 overflow-hidden [--color-1:var(--accent-primary)] [--color-2:var(--accent-hover)] [--color-3:var(--background-muted)] [--color-4:var(--text-secondary)] ${pill}`}
+      >
+        <GooeyNav
+          items={gooeyItems}
+          syncActiveIndex={activeNavIndex}
+          particleCount={15}
+          particleDistances={[90, 10]}
+          particleR={100}
+          animationTime={600}
+          timeVariance={300}
+          colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+        />
+      </div>
+
+      <Button
+        variant="ghost"
+        onClick={toggleTheme}
+        aria-label="Toggle theme"
+        className={`hidden md:flex w-14 h-14 cursor-pointer rounded-full p-0 hover:bg-transparent ${pill}`}
+      >
+        {isDark ? <Sun className="size-6" /> : <Moon className="size-6" />}
+      </Button>
+
+      <div
+        className={`relative md:hidden flex items-center justify-between gap-2 rounded-full px-3 py-2 max-w-[calc(100vw-20px)] ${pill}`}
+        ref={dropdownRef}
+      >
+        {/* <Button
+          variant="ghost"
+          onClick={goHome}
+          aria-label="Go to top"
+          className="p-0 hover:bg-transparent size-10 rounded-full shrink-0"
+        >
+          <span className="text-xs font-bold bg-gradient-to-r from-accent-primary to-accent-hover bg-clip-text text-transparent">JA</span>
+        </Button> */}
+
+        <div className="flex items-center gap-1">
+          <Button
+            variant="ghost"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 hover:bg-transparent text-foreground shrink-0"
+          >
+            {isDark ? <Sun className="size-6" /> : <Moon className="size-6" />}
+          </Button>
+
+          <Button
+            variant="ghost"
+            onClick={() => setMobileOpen((o) => !o)}
+            aria-label="Toggle menu"
+            className="p-2 hover:bg-transparent text-foreground shrink-0"
+          >
+            {mobileOpen ? (
+              <X className="size-6" />
+            ) : (
+              <Menu className="size-6" />
+            )}
+          </Button>
+        </div>
+
+        {mobileOpen && (
+          <div
+            className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 rounded-2xl overflow-hidden min-w-40 ${pill}`}
+          >
+            {NAV_LABELS.map((label, i) => (
+              <Button
+                key={label}
+                variant="ghost"
+                onClick={() => handleNavClick(NAV_SECTIONS[i])}
+                className={`w-full justify-start px-5 h-auto py-3 text-sm rounded-none hover:bg-transparent ${
+                  activeNavIndex === i
+                    ? "text-primary bg-primary/10 hover:bg-primary/10"
+                    : "text-text-secondary"
+                }`}
+              >
+                {label}
+              </Button>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
