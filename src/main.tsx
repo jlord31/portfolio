@@ -5,6 +5,7 @@ import "./index.css";
 import ThemeProvider from "./providers/theme-provider";
 import { routeTree } from "./routeTree.gen";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const router = createRouter({ routeTree });
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <RouterProvider router={router} />
       <Toaster />
+      <Analytics />
     </ThemeProvider>
   </StrictMode>,
 );
