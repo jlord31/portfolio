@@ -7,6 +7,7 @@ import vobbPreview from "@/assets/images/vobb/vobb_1.png";
 import mrOrderPreview from "@/assets/images/mr_order/mr_order_1.png";
 import lawiPreview from "@/assets/images/lawi/lawi.png";
 import tokocyPreview from "@/assets/images/toko_cy/tokocy.png";
+import valendataPreview from "@/assets/images/valendata/valendata.png";
 
 export const projectsData: ProjectsData = {
   tag: "What I've built",
@@ -74,6 +75,47 @@ export const projectsData: ProjectsData = {
       featured: true,
       previewImage: blinxPreview,
       rolesRelevant: ["fullstack-engineer", "ai-software-engineer", "ml-engineer"],
+    },
+    {
+      name: "Valendata",
+      type: "AI Browser Automation Platform",
+      status: "In Production",
+      liveUrl: "https://www.valendata.com/",
+      description:
+        "AI-powered browser automation platform that turns websites into reusable skills and APIs. Enables users to control real browsers with natural language, automate complex workflows, and extract structured data at scale. Features real browser automation handling JavaScript, cookies, captchas, and dynamic content; natural language task execution; instant REST API generation per skill; a community skill marketplace; variable-powered repeatable workflows; scheduled automations with Cron and monitoring; vision-guided self-healing that adapts to UI changes; personal browser mode for authenticated sessions; and live browser view for real-time skill observation.",
+      role:
+        "Engineered the full-stack platform from browser automation core to AI orchestration layer. Built the natural language task interpreter, REST API generation pipeline, skill marketplace, and vision-guided self-healing engine. Designed and implemented the scheduler, live browser streaming, and personal browser session management.",
+      tech: [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "Zustand",
+        "Mantine",
+        "Python",
+        "FastAPI",
+        "SQLAlchemy",
+        "Alembic",
+        "PostgreSQL",
+        "Redis",
+        "OpenAI",
+        "Anthropic",
+        "Google Generative AI",
+        "Groq",
+        "LangChain",
+        "PyTorch",
+        "scikit-learn",
+        "sentence-transformers",
+        "Playwright",
+        "Docker",
+        "CI/CD",
+      ],
+      featured: true,
+      previewImage: valendataPreview,
+      rolesRelevant: [
+        "ai-software-engineer",
+        "ml-engineer",
+        "fullstack-engineer",
+      ],
     },
     {
       name: "Skkido HQ",
