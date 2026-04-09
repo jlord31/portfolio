@@ -1,10 +1,6 @@
 import type { ContactData } from "@/types/contact.types";
 
 const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL || "";
-const CONTACT_WHATSAPP_DISPLAY =
-  import.meta.env.VITE_CONTACT_WHATSAPP_DISPLAY || "";
-const CONTACT_WHATSAPP_NUMBER =
-  import.meta.env.VITE_CONTACT_WHATSAPP_NUMBER || "";
 
 export const contactData: ContactData = {
   tag: "Contact",
@@ -17,12 +13,6 @@ export const contactData: ContactData = {
       label: "Email",
       value: CONTACT_EMAIL,
       href: `mailto:${CONTACT_EMAIL}`,
-    },
-    {
-      icon: "phone",
-      label: "WhatsApp",
-      value: CONTACT_WHATSAPP_DISPLAY,
-      href: `https://wa.me/${CONTACT_WHATSAPP_NUMBER}`,
     },
     {
       icon: "location",
