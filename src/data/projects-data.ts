@@ -8,7 +8,7 @@ import mrOrderPreview from "@/assets/images/mr_order/mr_order_1.png";
 import lawiPreview from "@/assets/images/lawi/lawi.png";
 import tokocyPreview from "@/assets/images/toko_cy/tokocy.png";
 import valendataPreview from "@/assets/images/valendata/valendata.png";
-import fatsomaTabbPreview from '@assets/images/tabb/tabb.png';
+import fatsomaTabbPreview from "@/assets/images/tabb/tabb.png";
 
 export const projectsData: ProjectsData = {
   tag: "What I've built",

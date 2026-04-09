@@ -3,6 +3,7 @@ export const skillColors: Record<string, string> = {
   "React.js": "#61dafb", // React Blue
   TypeScript: "#3178c6", // TypeScript Blue
   "JavaScript (ES6+)": "#f7df1e", // JavaScript Yellow
+  "Go (Golang)": "#00add8", // Go Blue
   HTML5: "#e34c26", // HTML Orange
   CSS3: "#563d7c", // CSS Purple
   "Tailwind CSS": "#06b6d4", // Tailwind Cyan
