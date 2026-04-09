@@ -8,6 +8,7 @@ import mrOrderPreview from "@/assets/images/mr_order/mr_order_1.png";
 import lawiPreview from "@/assets/images/lawi/lawi.png";
 import tokocyPreview from "@/assets/images/toko_cy/tokocy.png";
 import valendataPreview from "@/assets/images/valendata/valendata.png";
+import fatsomaTabbPreview from '@assets/images/tabb/tabb.png';
 
 export const projectsData: ProjectsData = {
   tag: "What I've built",
@@ -164,6 +165,37 @@ export const projectsData: ProjectsData = {
       featured: true,
       previewImage: kolikPreview,
       rolesRelevant: ["fullstack-engineer", "ai-software-engineer"],
+    },
+    {
+
+      name: "Fatsoma Tabb Platform",
+      type: "e-Commerce & Ordering System",
+      status: "In Production",
+      liveUrl: "https://business.fatsoma.com/tabb",
+      description:
+        "Production food-ordering platform that lets users discover venues, customize orders, and complete checkout with a smooth end-to-end flow. Includes real-time order handling, menu customization, payment processing, analytics instrumentation, and customer feedback workflows.",
+      role:
+        "Contributed across frontend and backend services in a multi-repo architecture. Delivered user-facing and operational features (including tipping), improved platform stability through ongoing maintenance, and integrated analytics, feedback modules, and AI-assisted content capabilities.",
+      tech: [
+        "Golang",
+        "React.js",
+        "SAM",
+        "AI Integration",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "REST APIs",
+        "CI/CD",
+        "AWS",
+        "Payment Integration",
+        "Responsive Design",
+      ],
+      featured: false,
+      previewImage: fatsomaTabbPreview,
+      rolesRelevant: [
+        "fullstack-engineer",
+        "ai-software-engineer",
+      ],
     },
     {
       name: "LAWI Gourmet - Custom Dessert Platform",
