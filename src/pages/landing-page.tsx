@@ -4,6 +4,7 @@ import {
   HeroSection,
   AboutSection,
   ResearchSection,
+  PublicationsSection,
   SkillsSection,
   ExperienceSection,
   ProjectsSection,
@@ -51,6 +52,7 @@ const LandingPage = () => {
           <HeroSection />
           <AboutSection />
           <ResearchSection />
+          <PublicationsSection />
           <SkillsSection />
           <ExperienceSection />
           <ProjectsSection />
