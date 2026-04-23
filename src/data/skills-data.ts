@@ -7,7 +7,7 @@ export const skillsData: SkillsData = {
     {
       label: "Languages",
       skills: [
-        { name: "Python", rolesRelevant: ["ai-software-engineer", "ml-engineer", "phd-student"] },
+        { name: "Python", rolesRelevant: ["ai-software-engineer", "fullstack-engineer", "ml-engineer", "phd-student"] },
         { name: "TypeScript", rolesRelevant: ["ai-software-engineer", "fullstack-engineer"] },
         { name: "JavaScript (ES6+)", rolesRelevant: ["ai-software-engineer", "fullstack-engineer"] },
         { name: "Go (Golang)", rolesRelevant: ["fullstack-engineer", "ai-software-engineer"] },
