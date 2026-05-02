@@ -24,7 +24,7 @@ export const projectsData: ProjectsData = {
       description:
         "Comprehensive AI platform consolidating enterprise automation into one unified ecosystem. Features include an LLM Evaluation Studio for model optimization, RAG-powered Knowledge Base transforming documents and web pages into searchable AI repositories, Chatbot Creator for custom AI assistants, Autonomous Agents for task automation and workflow orchestration, Meeting Assistant for transcription and summarization, WhatsApp Bot for customer engagement, intelligent web scraping, and 150+ app integrations.",
       role:
-        "Engineered full-stack AI platform architecture spanning RAG pipelines, autonomous agents, meeting automation, web scraping, and on-premise deployments. Integrated multiple LLM providers, optimized retrieval quality, and delivered production-grade infrastructure for enterprise automation workflows.",
+        "Engineered full-stack AI platform architecture spanning RAG pipelines, autonomous agents, meeting automation, web scraping, and on-premise deployments. Integrated multiple LLM providers, optimized retrieval quality, and exposed platform capabilities via MCP adapters for agent-to-tool interoperability across enterprise automation workflows.",
       ownershipNote:
         "This is a unified portfolio case study that consolidates multiple production systems delivered within the same CMND platform.",
       tech: [
@@ -85,7 +85,7 @@ export const projectsData: ProjectsData = {
       description:
         "AI-powered browser automation platform that turns websites into reusable skills and APIs. Enables users to control real browsers with natural language, automate complex workflows, and extract structured data at scale. Features real browser automation handling JavaScript, cookies, captchas, and dynamic content; natural language task execution; instant REST API generation per skill; a community skill marketplace; variable-powered repeatable workflows; scheduled automations with Cron and monitoring; vision-guided self-healing that adapts to UI changes; personal browser mode for authenticated sessions; and live browser view for real-time skill observation.",
       role:
-        "Engineered the full-stack platform from browser automation core to AI orchestration layer. Built the natural language task interpreter, REST API generation pipeline, skill marketplace, and vision-guided self-healing engine. Designed and implemented the scheduler, live browser streaming, and personal browser session management.",
+        "Engineered the full-stack platform from browser automation core to AI orchestration layer. Built the natural language task interpreter, REST API generation pipeline, skill marketplace, and vision-guided self-healing engine. Designed and implemented the scheduler, live browser streaming, personal browser session management, and MCP adapters to expose automation skills as consumable tools for external AI agents.",
       tech: [
         "React.js",
         "Vite",
