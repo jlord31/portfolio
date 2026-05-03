@@ -43,7 +43,7 @@ export const experienceData: ExperienceData = {
       duration: "20 months",
       roleResponsibilities: {
         "ai-software-engineer": [
-          "Engineered agent workflows with advanced tool-usage capabilities, including API calls, database queries, and dynamic routing, enabling intelligent automation and decision-making.",
+          "Engineered agent workflows with advanced tool-usage capabilities, including API calls, database queries, dynamic routing, and MCP-compliant tool adapters, enabling intelligent automation and decision-making.",
           "Designed and deployed memory systems using vector databases and embeddings to power retrieval-augmented generation and improve agent reasoning.",
           "Implemented secure on-premise deployments of LLM agents, ensuring compliance with privacy requirements while maintaining production-level performance.",
           "Integrated multiple LLM providers, including GPT-4, Claude, DeepSeek, and Gemini, into scalable pipelines supported by Python (FastAPI), AWS Batch, and React-based interfaces.",
@@ -55,7 +55,7 @@ export const experienceData: ExperienceData = {
           "Integrated vector search, evaluation workflows, and scalable Python services to support production-ready AI systems backed by AWS Batch and FastAPI.",
         ],
         "phd-student": [
-          "Investigated agentic LLM architectures with tool-use, memory modules, and dynamic routing to improve robustness of autonomous workflow execution.",
+          "Investigated agentic LLM architectures with tool-use, memory modules, dynamic routing, and MCP-based tool interfaces to improve robustness of autonomous workflow execution.",
           "Designed and evaluated retrieval-augmented reasoning pipelines using vector databases and embeddings to strengthen contextual grounding and response quality.",
           "Conducted comparative experimentation across multiple LLM providers (GPT-4, Claude, DeepSeek, Gemini) to assess capability trade-offs for applied research tasks.",
           "Implemented privacy-aware deployment patterns, including on-premise agent configurations, to study practical constraints in real-world AI systems.",
