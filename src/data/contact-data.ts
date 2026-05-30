@@ -28,7 +28,7 @@ export const contactData: ContactData = {
     },
     {
       icon: "linkedin",
-      href: "https://www.linkedin.com/in/joseph-adepoju/",
+      href: "https://www.linkedin.com/in/joseph-adepoju-876574206/",
 
       label: "LinkedIn",
     }
@@ -57,7 +57,7 @@ export const contactData: ContactData = {
       },
       {
         icon: "linkedin",
-        href: "https://www.linkedin.com/in/joseph-adepoju/",
+        href: "https://www.linkedin.com/in/joseph-adepoju-876574206/",
         label: "LinkedIn",
       }
     ],
