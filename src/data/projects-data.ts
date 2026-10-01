@@ -9,6 +9,7 @@ import lawiPreview from "@/assets/images/lawi/lawi.png";
 import tokocyPreview from "@/assets/images/toko_cy/tokocy.png";
 import valendataPreview from "@/assets/images/valendata/valendata.png";
 import fatsomaTabbPreview from "@/assets/images/tabb/tabb.png";
+import afbfPreview from "@/assets/images/afbf/afbf.png";
 
 export const projectsData: ProjectsData = {
   tag: "What I've built",
@@ -164,6 +165,33 @@ export const projectsData: ProjectsData = {
       ],
       featured: true,
       previewImage: kolikPreview,
+      rolesRelevant: ["fullstack-engineer", "ai-software-engineer"],
+    },
+    {
+      name: "Africa Food Basket Federation",
+      type: "Pan-African NGO Platform",
+      status: "In Production",
+      liveUrl: "https://africafbf.org/",
+      description:
+        "Digital home for a Pan-African non-profit federation dedicated to food sovereignty and intra-African agricultural trade. The platform serves farmers, agri-professionals, donors, and government partners across Africa with membership registration, a member portal, events, insights, donations, and multilingual support, built and deployed as a production system on custom infrastructure.",
+      role:
+        "Sole engineer across the entire stack and infrastructure. Built the frontend, REST API, and database layer, including the membership lifecycle, certificate generation, and role-based access control. Configured and deployed the full production environment with Nginx, SSL, Docker Compose, and an automated CI/CD pipeline to a self-managed VPS.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Cloudinary",
+        "Resend",
+        "Paystack",
+        "Docker",
+        "Nginx",
+        "CI/CD",
+      ],
+      featured: true,
+      previewImage: afbfPreview,
       rolesRelevant: ["fullstack-engineer", "ai-software-engineer"],
     },
     {
