@@ -10,6 +10,7 @@ import tokocyPreview from "@/assets/images/toko_cy/tokocy.png";
 import valendataPreview from "@/assets/images/valendata/valendata.png";
 import fatsomaTabbPreview from "@/assets/images/tabb/tabb.png";
 import afbfPreview from "@/assets/images/afbf/afbf.png";
+import cretoscopePreview from "@/assets/images/cretoscope/cretoscope.png";
 
 export const projectsData: ProjectsData = {
   tag: "What I've built",
@@ -84,9 +85,9 @@ export const projectsData: ProjectsData = {
       status: "In Production",
       liveUrl: "https://www.valendata.com/",
       description:
-        "AI-powered browser automation platform that turns websites into reusable skills and APIs. Enables users to control real browsers with natural language, automate complex workflows, and extract structured data at scale. Features real browser automation handling JavaScript, cookies, captchas, and dynamic content; natural language task execution; instant REST API generation per skill; a community skill marketplace; variable-powered repeatable workflows; scheduled automations with Cron and monitoring; vision-guided self-healing that adapts to UI changes; personal browser mode for authenticated sessions; and live browser view for real-time skill observation.",
+        "AI-powered browser automation platform that turns websites into reusable skills and multi-step pipelines. Users describe goals in plain language and the platform drives real browsers, records the steps as reusable skills, and chains them into persistent workflows. Features automation across JavaScript-heavy, authenticated, and dynamic sites; a visual workflow canvas; a Chrome extension for running automations in real browser sessions; real-time voice interaction; an AI-powered email inbox; instant REST API generation per skill; self-healing automations that adapt to site changes; 50+ integrations; and an MCP server for plugging workflows into external agent systems.",
       role:
-        "Engineered the full-stack platform from browser automation core to AI orchestration layer. Built the natural language task interpreter, REST API generation pipeline, skill marketplace, and vision-guided self-healing engine. Designed and implemented the scheduler, live browser streaming, personal browser session management, and MCP adapters to expose automation skills as consumable tools for external AI agents.",
+        "Contributed across the full-stack platform spanning the browser automation core, AI orchestration layer, and multi-repo architecture. Built the natural language task interpreter, API generation pipeline, skill marketplace, and self-healing engine. Extended the platform with a visual workflow builder for multi-step automation pipelines, real-time voice interaction, an AI-powered mailbox, a Chrome extension for authenticated browser sessions, and an MCP server exposing workflows to external agents. Set up the CI/CD pipeline and managed deployment and server configuration on a dedicated VPS.",
       tech: [
         "React.js",
         "Vite",
@@ -118,6 +119,29 @@ export const projectsData: ProjectsData = {
         "ml-engineer",
         "fullstack-engineer",
       ],
+    },
+    {
+      name: "Cretoscope",
+      type: "AI Creator Sourcing Platform",
+      status: "In Production",
+      description:
+        "AI-powered platform for discovering and activating creators across diverse social platforms inclding, TikTok, Instagram, and YouTube. Uses autonomous AI agents to source creators by engagement rate, generate platform-specific campaign briefs, and draft multi-step outreach sequences. Includes campaign management, performance analytics, and webhook integrations with Slack, HubSpot, and Pipedrive.",
+      role:
+        "Built the full-stack platform end-to-end, including the autonomous AI agent layer with real Claude tool-use loops, a structured tool registry, and multiple specialised agents for creator sourcing, brief generation, and outreach sequencing. Designed the async task queue architecture for background agent execution. Exposed platform capabilities via an MCP server, enabling external agents to plug into creator sourcing and outreach workflows. Investigated LLM token cost management strategies and reduced token usage by over 50% through prompt caching and tool result optimisation. Set up the CI/CD pipeline and deployed the full system to a dedicated VPS.",
+      tech: [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Celery",
+        "React",
+        "TypeScript",
+        "Anthropic Claude",
+        "Docker",
+      ],
+      featured: true,
+      previewImage: cretoscopePreview,
+      rolesRelevant: ["ai-software-engineer", "ml-engineer", "fullstack-engineer"],
     },
     {
       name: "Skkido HQ",
