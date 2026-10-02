@@ -20,12 +20,12 @@ export const publicationsData = {
   items: [
     {
       title:
-        "A Stacked Ensemble Framework with GCViT Features Integration for Accurate Diabetic Retinopathy Detection",
-      authors: "—",
-      venue: "Under Review",
-      year: 2025,
+        "A Stacked Ensemble Framework with Global Context Vision Transformer Feature Integration for Accurate Diabetic Retinopathy Detection",
+      authors: "Ruth Alabi, Hüseyin Öztoprak",
+      venue: "Engineering Applications of Artificial Intelligence",
+      year: 2026,
       type: "journal" as const,
-      status: "under-review" as const,
+      status: "published" as const,
       contributorRole: "Technical Contributor",
       tags: ["Diabetic Retinopathy", "Ensemble Learning", "Medical Imaging", "Vision Transformers"],
     },
