@@ -23,7 +23,7 @@ export const projectsData: ProjectsData = {
       name: "CMND.AI Platform",
       type: "Enterprise AI Ecosystem",
       status: "In Production",
-
+      liveUrl: "https://www.cmnd.ai/",
       description:
         "Comprehensive AI platform consolidating enterprise automation into one unified ecosystem. Features include an LLM Evaluation Studio for model optimization, RAG-powered Knowledge Base transforming documents and web pages into searchable AI repositories, Chatbot Creator for custom AI assistants, Autonomous Agents for task automation and workflow orchestration, Meeting Assistant for transcription and summarization, WhatsApp Bot for customer engagement, intelligent web scraping, and 150+ app integrations.",
       role:
@@ -62,7 +62,7 @@ export const projectsData: ProjectsData = {
       name: "Blinx Healthcare Platform",
       type: "Healthcare Technology",
       status: "In Production",
-
+      liveUrl: "https://www.blinxhealthcare.com/",
       description:
         "Digital health platform featuring NHS-integrated e-prescriptions, electronic consultations, unified patient records across care settings, real-time team communication, and PACO Assist for clinical decision support, deployable across NHS, private, and international providers.",
       role: "Architected and deployed the full-stack platform including real-time communication, secure patient data handling, NHS integration, and Paco Assist AI.",
@@ -84,7 +84,7 @@ export const projectsData: ProjectsData = {
       name: "Valendata",
       type: "AI Browser Automation Platform",
       status: "In Production",
-
+      liveUrl: "https://www.valendata.com/",
       description:
         "AI-powered browser automation platform that turns websites into reusable skills and multi-step pipelines. Users describe goals in plain language and the platform drives real browsers, records the steps as reusable skills, and chains them into persistent workflows. Features automation across JavaScript-heavy, authenticated, and dynamic sites; a visual workflow canvas; a Chrome extension for running automations in real browser sessions; real-time voice interaction; an AI-powered email inbox; instant REST API generation per skill; self-healing automations that adapt to site changes; 50+ integrations; and an MCP server for plugging workflows into external agent systems.",
       role:
@@ -125,6 +125,7 @@ export const projectsData: ProjectsData = {
       name: "Cretoscope",
       type: "AI Creator Sourcing Platform",
       status: "In Production",
+      liveUrl: "https://www.cretoscope.com/",
       description:
         "AI-powered platform for discovering and activating creators across diverse social platforms including TikTok, Instagram, and YouTube. Uses autonomous AI agents to source creators by engagement rate, generate platform-specific campaign briefs, and draft multi-step outreach sequences. Includes campaign management, performance analytics, and webhook integrations with Slack, HubSpot, and Pipedrive.",
       role:
@@ -148,7 +149,7 @@ export const projectsData: ProjectsData = {
       name: "Skkido HQ",
       type: "Client Workspace & Service Operations Platform",
       status: "In Production",
-
+      liveUrl: "https://www.skkido.com/",
       description:
         "Unified workspace for freelancers, consultants, agencies, and small service businesses. Consolidates CRM, project management, contracts, invoicing, payments, client communication, and AI-powered features to streamline the full client lifecycle from first contact to final payment.",
       role:
@@ -174,7 +175,7 @@ export const projectsData: ProjectsData = {
       name: "Kolik HR Operations Platform",
       type: "HR Management & Workflow Automation",
       status: "In Production",
-
+      liveUrl: "https://kolik.co/",
       description:
         "Centralized HR platform for managing employee records, leave workflows, payroll operations, support tickets, and payment orders. Includes AI-assisted recommendations and automation to reduce manual workload and improve response speed for HR teams.",
       role:
@@ -196,7 +197,7 @@ export const projectsData: ProjectsData = {
       name: "Africa Food Basket Federation",
       type: "Pan-African NGO Platform",
       status: "In Production",
-
+      liveUrl: "https://demo.africafbf.org/",
       description:
         "Digital home for a Pan-African non-profit federation dedicated to food sovereignty and intra-African agricultural trade. The platform serves farmers, agri-professionals, donors, and government partners across Africa with membership registration, a member portal, events, insights, donations, and multilingual support, built and deployed as a production system on custom infrastructure.",
       role:
@@ -224,7 +225,7 @@ export const projectsData: ProjectsData = {
       name: "Fatsoma Tabb Platform",
       type: "e-Commerce & Ordering System",
       status: "In Production",
-
+      liveUrl: "https://business.fatsoma.com/tabb",
       description:
         "Production food-ordering platform that lets users discover venues, customize orders, and complete checkout with a smooth end-to-end flow. Includes real-time order handling, menu customization, payment processing, analytics instrumentation, and customer feedback workflows.",
       role:
@@ -254,7 +255,7 @@ export const projectsData: ProjectsData = {
       name: "Dreep",
       type: "Cloud Media Processing Platform",
       status: "In Production",
-
+      liveUrl: "https://dreep.cloud/",
       description:
         "Cloud media asset management and processing platform for uploading, transforming, and serving images and video at scale. Features AI-powered image tagging, background removal, OCR, image and video transformations, folder organisation, team collaboration, and BYOB storage with integrations for S3, Cloudflare R2, and Cloudinary. Available via REST API with usage-based billing across Free, Starter, and Pro plans.",
       role:
@@ -279,7 +280,7 @@ export const projectsData: ProjectsData = {
       name: "LAWI Gourmet - Custom Dessert Platform",
       type: "e-Commerce & Ordering System",
       status: "In Production",
-
+      liveUrl: "https://lawi.ng/",
       description:
         "Custom dessert ordering platform enabling customers to configure and order personalized gourmet desserts. Features real-time order management, ingredient customization, image galleries, and integrated payment system.",
       role: "Developed full-stack ordering platform with intuitive UI for dessert customization, integrated payment processing, and backend order management system.",
@@ -302,7 +303,7 @@ export const projectsData: ProjectsData = {
       name: "Tokocy - Digital Product Marketplace",
       type: "E-Commerce Platform",
       status: "In Production",
-
+      liveUrl: "https://tokocy.com/",
       description:
         "Full-stack digital product marketplace connecting creators with customers. Platform features product listings, secure payment processing, inventory management, and real-time order notifications with responsive design across all devices.",
       role: "Built complete marketplace platform from database design through frontend UI, implemented payment gateway integration, and established scalable backend infrastructure.",
@@ -324,7 +325,7 @@ export const projectsData: ProjectsData = {
       name: "VOBB Travel Agent Platform",
       type: "Travel Operations Platform",
       status: "In Production",
-
+      liveUrl: "http://vobb.io/",
       description:
         "All-in-one operational platform supporting travel agents in daily business workflows, customer handling, and booking-related processes. Designed to centralize fragmented operations into a reliable system for faster service delivery.",
       role:
