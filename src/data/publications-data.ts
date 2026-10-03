@@ -49,5 +49,5 @@ export const publicationsData = {
       url: "https://doi.org/10.1007/978-3-031-42924-8_2",
       tags: ["Food Recognition", "CNN", "Computer Vision"],
     },
-  ] satisfies Publication[],
+  ] as Publication[],
 };

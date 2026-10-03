@@ -17,7 +17,7 @@ export const contactData: ContactData = {
     {
       icon: "location",
       label: "Location",
-      value: "Nicosia, Cyprus",
+      value: "Lagos, Nigeria",
     },
   ],
   socialLinks: [
